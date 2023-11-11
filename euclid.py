@@ -1,5 +1,5 @@
-def exEuclidExp(a, b):
-    '''拡張ユークリッドの互除法。d =ax+bYを見たすd, x, yを求める。'''
+def euclid(a, b):
+    '''ユークリッドの互除法。d =ax+bYを見たすdを求める。'''
     a_list = []
     x_list = []
     y_list = []
@@ -27,6 +27,4 @@ def exEuclidExp(a, b):
         y_list.append(yiplus1)
         i += 1
     d = a_list[i-1]
-    x = x_list[i-1]
-    y = y_list[i-1]
-    return ([d, x, y])
+    return d
