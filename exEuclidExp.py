@@ -1,4 +1,23 @@
 def exEuclidExp(a, b):
+    """
+    extended Euclidian Algorithm with efficiency counter.
+
+    parameters:
+    ----------
+    a : int
+    b : int
+
+    returns:
+    ----------
+    d : int
+        gcd(a,b). d = ax + by
+    x : int
+        this is also called as modular inverse of a; a^-1.
+    y : int
+        this is also called as modular inverse of b; b^-1.
+    counter : int
+        the number of steps to get gcd(a,b).
+    """
     counter = 0
     a_list = []
     x_list = []

@@ -1,5 +1,21 @@
-def exEuclidExp(a, b):
-    '''拡張ユークリッドの互除法。d =ax+bYを見たすd, x, yを求める。'''
+def ex_euclid(a, b):
+    """
+    extended Euclidian Algorithm.
+
+    parameters:
+    ----------
+    a : int
+    b : int
+
+    returns:
+    ----------
+    d : int
+        gcd(a,b). d = ax + by
+    x : int
+        this is also called as modular inverse of a; a^-1.
+    y : int
+        this is also called as modular inverse of b; b^-1.
+    """
     a_list = []
     x_list = []
     y_list = []
